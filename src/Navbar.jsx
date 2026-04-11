@@ -28,17 +28,17 @@ export default function Navbar({ user }) {
                 </button>
                 <ul className="nav">
                     <li className="nav-item">
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/">Acasa</NavLink>
                     </li>
                     <li className="nav-item">
-                        {user ? <NavLink to="/profile">Profile</NavLink> : <NavLink to="/login">Login</NavLink>}
+                        {user ? <NavLink to="/profile">Profile</NavLink> : <NavLink to="/login">Autentificare</NavLink>}
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/products">Products</NavLink>
+                        <NavLink to="/products">Produse</NavLink>
                     </li>
                 </ul>
                 <Link to="/cart" className="btn btn-nav">
-                    Cart ({cartCount})
+                    Cos ({cartCount})
                 </Link>
             </nav>
         </div>

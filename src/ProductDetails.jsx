@@ -12,7 +12,7 @@ export default function ProductDetails() {
     const { data } = useSuspenseQuery({
         queryKey: ["products/details", id],
         queryFn: () => get(`products?id=eq.${id}`),
-        staleTime: 1000 * 60 * 5, // 5 minutes
+        staleTime: 1000 * 60 * 5, // 5 minute
     });
 
     const details = data[0];
@@ -20,7 +20,7 @@ export default function ProductDetails() {
     return (
         <>
             <Link to="/products" className="back">
-                &lsaquo; Back to products
+                &lsaquo; Inapoi la produse
             </Link>
             <title>{`${details.name} | SuperM`}</title>
             <div className="details">
@@ -33,25 +33,25 @@ export default function ProductDetails() {
                         className="details-image"
                     />
 
-                    <h2>Product details</h2>
+                    <h2>Detalii produs</h2>
                     <table className="nutrition">
                         <thead>
                             <tr>
-                                <th>Nutrient</th>
-                                <th>Value</th>
+                                <th>Nutrienti</th>
+                                <th>Valoare</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Protein</td>
+                                <td>Proteine</td>
                                 <td>{details.nutrition.protein} g</td>
                             </tr>
                             <tr>
-                                <td>Carbohydrates</td>
+                                <td>Carbohidrati</td>
                                 <td>{details.nutrition.carbs} g</td>
                             </tr>
                             <tr>
-                                <td>Fat</td>
+                                <td>Grasimi</td>
                                 <td>{details.nutrition.fat} g</td>
                             </tr>
                         </tbody>
@@ -76,7 +76,7 @@ export default function ProductDetails() {
                             className="btn btn-block"
                             onClick={() => handleAddProduct(details)}
                         >
-                            Add to cart
+                            Adauga in cos
                         </button>
                     </div>
                 </div>

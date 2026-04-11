@@ -15,11 +15,11 @@ export function CartProvider({ children }) {
     );
 
     function handleAddProduct(newProduct) {
-        // Check if item exists
+        // Verificați dacă elementul există
         const found = cart.find((product) => product.id === newProduct.id);
 
         if (found) {
-            // Increase quantity
+            // Măriți cantitatea
             const updatedCart = cart.map((product) => {
                 if (product.id === newProduct.id) {
                     return {
@@ -31,7 +31,7 @@ export function CartProvider({ children }) {
             });
             setCart(updatedCart);
         } else {
-            // Product is new to the cart
+            // Produsul este nou în coș
             setCart([
                 ...cart,
                 {

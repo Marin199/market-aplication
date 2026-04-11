@@ -10,7 +10,7 @@ import "./index.css";
 function Fallback({ error }) {
     return (
         <div role="alert">
-            <p>Something went wrong:</p>
+            <p>Ceva a mers prost:</p>
             <pre style={{ color: "red" }}>{error.message}</pre>
         </div>
     );

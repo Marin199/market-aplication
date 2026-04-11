@@ -34,30 +34,30 @@ export default function Products() {
     return (
         <>
             <div className="products-title">
-                <h1>Products</h1>
-                <title>Products | SuperM</title>
+                <h1>Produse</h1>
+                <title>Produse | SuperM</title>
                 <input
                     type="search"
                     className="search"
                     value={query}
-                    placeholder="Search products"
+                    placeholder="Cautare produse"
                     onChange={handleSearchChange}
                 />
             </div>
             {filteredProducts.length === 0 ? (
                 <div className="products-not-found">
                     <div>
-                        <h2>No products found!</h2>
+                        <h2>Nu s-au găsit produse!</h2>
                         <p>
-                            Your search &quot;<strong>{query}</strong>&quot; was
-                            not found in our store.
+                            Căutarea dvs. &quot;<strong>{query}</strong>&quot; nu 
+                            a fost găsită în magazinul nostru.
                         </p>
                         <button
                             className="btn btn-dimmed"
                             type="button"
                             onClick={handleReset}
                         >
-                            Reset search
+                            Resetare cautare
                         </button>
                     </div>
                 </div>

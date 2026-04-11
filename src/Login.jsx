@@ -51,9 +51,9 @@ export default function Login({ onUserLogin }) {
         <>
             <div className="profile-wrapper">
                 <title>Login | SuperM</title>
-                <h1>Login</h1>
+                <h1>Autentificare</h1>
                 <p className="text-dimmed">
-                    Login using test@example.com and any password.
+                    Autentificați-vă folosind test@example.com și orice parolă.
                 </p>
                 <form onSubmit={handleLogin}>
                     <label className="label" htmlFor={emailId}>
@@ -70,7 +70,7 @@ export default function Login({ onUserLogin }) {
                         ref={emailRef}
                     />
                     <label className="label" htmlFor={passwordId}>
-                        Password<span className="required">*</span>:
+                        Parola<span className="required">*</span>:
                     </label>
                     <input
                         id={passwordId}

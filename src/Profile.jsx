@@ -8,10 +8,10 @@ export default function Profile({ user, onUserLogout }) {
     return (
         <>
             <div className="profile-wrapper">
-                <h1>Profile</h1>
-                <title>Profile | SuperM</title>
+                <h1>Profil</h1>
+                <title>Profil | SuperM</title>
                 <p className="text-dimmed">
-                    You are logged in as <strong>{user.username}</strong>.
+                    Esti logat ca <strong>{user.username}</strong>.
                 </p>
                 <div className="profile-buttons">
                     <input
